@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@theme {
+  --color-aztec-gold: #C5934A;
+  --color-maize: #FFCB45;
+}
+@font-face {
+    font-family: 'egypt';
+    src: url(/Egypt.ttf);
+}
+@font-face {
+    font-family: 'vespasian';
+    src: url(/Vespasian.ttf);
+}
+
+body {
+    background-color: #ffefe0;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    font-family: 'egypt';
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+span {
+    font-family: 'Arimo';
+}
+.divider {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 1em;
+}

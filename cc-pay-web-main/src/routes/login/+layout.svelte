@@ -1,0 +1,19 @@
+<script>
+	import '../../app.css';
+    import bg from '$lib/assets/bg.jpg';
+	
+	let { children } = $props();
+</script>
+
+<svelte:head>
+    <!-- <link rel="icon" href={favicon} /> -->
+	<!-- <meta http-equiv="Content-Security-Policy" content="style-src http://localhost:5173/ https://accounts.google.com/gsi/ 'nonce-xxx123'" /> -->
+    <!-- <meta name="google-signin-client_id" content="1028999553685-jmt3d709j855hhvdd6e0f19gh1cdmpcv.apps.googleusercontent.com"> -->
+	<!-- <script src="https://accounts.google.com/gsi/client" async></script> -->
+</svelte:head>
+
+<div class="w-screen h-dvh absolute overflow-hidden bg-cover -z-20" style="background-image: url({bg});"></div>
+<!-- <div class="w-screen h-screen absolute -z-10" style="background: linear-gradient(180deg,rgba(0, 0, 0, 0.275) 20%, rgba(255, 255, 255, 0) 50%);"></div> -->
+<div class="w-screen h-dvh" style="padding: 10%;">
+    {@render children?.()}
+</div>
